@@ -4,7 +4,7 @@ A learning project. I'm building the harness for a coding agent in TypeScript, f
 
 The harness is everything around the model: the tool loop, the tools and their sandbox, budgets, context management, session resume, and the eval runner that scores the result. The model is off the shelf; the harness around it is hand-written.
 
-**Current milestone:** 0 (groundwork) · **Last updated:** 2026-10-19
+**Current milestone:** 0 (groundwork) · **Last updated:** 2026-10-21
 
 ## The question
 
@@ -35,7 +35,6 @@ What makes a coding-agent harness good at a fixed cost? The headline metric is *
 - **Measured, not asserted.** Results come from three trials per task, with 95% intervals and a flaky-task report. The external baseline is mini-SWE-agent with the same model, budgets, container image and limits.
 - **Pinned infrastructure.** Image digests, container limits, the model version and the harness commit are printed at the top of every run report.
 - **Recorded decisions.** Architecture decisions are written up as ADRs in `docs/adr/`.
-- **AI assistance, logged.** I write the code, tests, design docs and write-ups myself. An AI assistant is my tutor and reviewer, not the implementer; it helped draft this roadmap from my working plan. Any change an AI tool shapes is logged in `docs/verification-log.md`, with how I verified it.
 
 ## Milestones
 
@@ -179,7 +178,7 @@ console/   React supervision console
 tasks/     smoke tasks now, eval tasks later
 tests/
 bench/     eval runs and results
-docs/      brief.md, design.md, adr/, log.md, verification-log.md, escape-test.md
+docs/      brief.md, design.md, adr/, log.md, escape-test.md
 ```
 
 ## References
